@@ -1,16 +1,17 @@
 # Asphalt Sealcoating Solutions — One-Page Website
 
-Portfolio-grade static site for Asphalt Sealcoating Solutions in Egg Harbor Township, NJ.
+Portfolio-grade standalone site for Asphalt Sealcoating Solutions in Egg Harbor Township, New Jersey.
 
 ## Architecture
-- Zero-framework static HTML/CSS/JS for minimal payload and fast first render.
-- Cinematic hero video with poster fallback.
-- requestAnimationFrame-driven transform parallax across multiple depth layers.
-- Mobile scaling and prefers-reduced-motion fallback.
-- LocalBusiness structured data, SEO/social metadata, tap-to-call, and Google Maps directions.
+- One self-contained `index.html` with inline CSS, inline JavaScript, inline SVG identity, and no framework runtime.
+- Generated cinematic hero video delivered as H.264 MP4 with a real extracted poster frame.
+- `requestAnimationFrame` transform parallax across layered depths, implemented with CSS custom properties so decorative transforms are preserved.
+- Mobile scaling, keyboard focus states, skip link, and `prefers-reduced-motion` fallback.
+- Canonical metadata, Open Graph image, structured business data, tap-to-call, and Google Maps directions.
+- GitHub Pages deployment through GitHub Actions.
 
 ## Source discipline
-Only details corroborated by the supplied current business listing are treated as business facts. Conflicting older directory listings were excluded.
+Business facts are limited to the supplied/current business listing and review-supported services. Conflicting older directory contact details are intentionally excluded.
 
-## Local preview
-Run any static web server from this directory, for example: `python3 -m http.server 8080`.
+## Deployment target
+https://mhanson001.github.io/asphalt-sealcoating-solutions/
